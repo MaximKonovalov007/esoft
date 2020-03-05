@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="executer_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="executer_main.Designer.cs">
+      <DependentUpon>executer_main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tasks_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tasks_list.Designer.cs">
+      <DependentUpon>tasks_list.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="executer_main.resx">
+      <DependentUpon>executer_main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +90,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="tasks_list.resx">
+      <DependentUpon>tasks_list.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
